@@ -1,0 +1,33 @@
+
+✈️ Summary of Findings and Insights
+
+📊 1. General Trends:
+- The number of plane crashes began increasing in the early 20th century, peaking in the 1970s, followed by a steady decline.
+- Most crashes occurred during the 1970s–1980s, coinciding with the rapid expansion of civil aviation and less advanced technology.
+
+⚰️ 2. Fatal Outcomes:
+- The distribution of fatalities is right-skewed: most crashes involved relatively few casualties, but there are several major disasters with hundreds of deaths.
+- The average number of fatalities was higher in the 1970s compared to the 2000s, confirmed by a t-test (p-value < 0.05) → a statistically significant difference in lethality between the decades.
+
+🌍 3. Crash Geography:
+- Most incidents occurred in countries such as:
+  - 🇺🇸 United States
+  - 🇷🇺 Russia (or USSR)
+  - 🇨🇳 China
+  - 🇧🇷 Brazil
+- This may be related to both country size and aviation traffic intensity.
+
+🛠️ 4. Operator Type:
+- Many incidents were associated with military aviation, especially in earlier decades.
+- Civil aviation became dominant toward the end of the 20th century.
+
+📅 5. Trends:
+- The number of crashes has declined since the 1990s, likely due to:
+  - improved flight safety,
+  - implementation of advanced navigation and control technologies,
+  - stronger aviation regulations.
+
+🔍 Insights:
+- The 1970s were the most dangerous decade in aviation history.
+- Modern aviation is significantly safer, particularly in terms of fatal incidents.
+- Major disasters are rare but have a large impact on overall statistics.
