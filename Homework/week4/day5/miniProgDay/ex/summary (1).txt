@@ -1,0 +1,44 @@
+
+📊 AAPL Stock Analysis Project — Summary
+
+1. 📁 Initial Data Exploration
+- Data was successfully loaded and cleaned of missing values.
+- The 'Date' column was converted to datetime and set as the index.
+- The primary interval between entries is 1 day, with some gaps of 3–4 days (likely weekends or holidays).
+- The dataset spans from 1981-01-02 to 2023-10-13 (10,608 records).
+- The columns Open, High, Low, Close, Adj Close, and Volume contain numerical float/int values.
+
+2. 📈 Data Visualization
+- Plotted the following charts:
+  - Closing price (Close) over time.
+  - Trading volume (Volume) over time.
+  - Moving averages (MA 30 and MA 90).
+  - Candlestick chart to visualize Open, High, Low, and Close prices.
+
+3. 📉 Statistical Analysis
+- Calculated key statistics (mean, median, std) for relevant columns.
+- Computed moving averages:
+  - MA 30: short-term trend.
+  - MA 90: long-term trend.
+- Visualized moving averages alongside the Close price.
+
+4. 🧪 Hypothesis Testing
+- Added a 'Daily Return' column.
+- Performed a t-test comparing average Close prices between two years (e.g., 2000 vs 2020), showing statistically significant difference.
+- Tested the distribution of Daily Returns:
+  - Used the Shapiro-Wilk test.
+  - p-value < 0.05 → the null hypothesis of normal distribution is rejected.
+
+5. 🧠 Advanced Statistical Techniques (Bonus)
+- Calculated a 30-day moving average using NumPy’s `np.convolve`.
+- Analyzed correlation:
+  - Between MA_30 and Volume: moderate negative correlation.
+  - Between Close and Volume by year: fluctuations depending on market activity.
+- Visualized return distribution using Seaborn.
+
+📌 Overall Conclusions:
+- AAPL stock prices show long-term growth with temporary declines.
+- Trading volume has increased significantly over the years, especially after the 2000s.
+- Moving averages effectively illustrate both short- and long-term trends.
+- Year-to-year price differences are statistically significant.
+- Daily returns do not follow a normal distribution.
