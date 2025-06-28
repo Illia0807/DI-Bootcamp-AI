@@ -1,0 +1,55 @@
+Pipeline for the Pokemon Win Prediction Analysis task
+
+Import libraries and load data
+Import libraries: pandas, numpy, seaborn, matplotlib, sklearn, etc.
+Load the files pokemon.csv and combats.csv into DataFrames.
+
+Preliminary data inspection
+View the first few rows of each dataset (head()).
+Check structure, data types, and missing values (info(), isnull().sum()).
+
+Handle missing values and data corrections
+Fill the missing name for Pokémon #62 (Primeape).
+In the column Type 2, replace missing values with the string "None".
+Check for other missing values and decide how to handle them.
+
+Merge data and create new features
+Create a dictionary or DataFrame with the number of wins and total battles for each Pokémon from combats.csv.
+Calculate the win percentage = (number of wins / total battles) * 100.
+Add this feature to the main Pokémon DataFrame.
+If needed, merge data by Pokémon ID.
+
+Exploratory Data Analysis (EDA) and visualization
+Build a correlation matrix between main stats and win percentage.
+Visualize statistics vs. win percentage using seaborn.pairplot or PairGrid.
+Analyze the top 10 Pokémon by win percentage — display their stats and plot graphs.
+
+Prepare data for modeling
+Select features such as HP, Attack, Defense, Speed, Type 1, Type 2, Legendary, etc.
+Convert categorical features to numeric (one-hot encoding or label encoding).
+Split data into training (80%) and testing (20%) sets.
+If necessary, scale numeric features (e.g., using StandardScaler).
+
+Build and train machine learning models
+Train several regression models to predict win percentage:
+
+Linear Regression
+
+Random Forest Regressor
+
+XGBoost Regressor (if available)
+Tune hyperparameters if needed (e.g., basic parameters for a start).
+
+Evaluate and compare models
+Predict win percentages on the test set.
+Calculate the quality metric — MAE (Mean Absolute Error) for each model.
+Visualize model error comparison (e.g., bar plot).
+
+Summary and conclusions
+Make a brief summary: which features are important, which model predicts best.
+Discuss possible improvements or next steps.
+
+Finalization
+Organize all code and comments in a Jupyter Notebook.
+Add visualizations and brief explanations for each step.
+Upload the notebook to a GitHub repository.
